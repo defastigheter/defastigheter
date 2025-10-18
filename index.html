@@ -1,3 +1,13 @@
+
+<!--
+git add .
+git commit -m "Uppdaterade hemsidan"
+git push -f origin main
+-->
+
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch  -->
+
+
 <!DOCTYPE html>
 <html lang="sv">
   <head>
@@ -16,7 +26,7 @@
     >
       <div class="text-2xl font-subheading tracking-wide">
   <a href="#home" class="flex items-center space-x-2">
-    <img src="/Image/Logo DE.png" alt="Logo" class="w-20  object-cover" />
+    <img src="Image/Logo DE.png" alt="Logo" class="w-20  object-cover" />
     <!--<span>DE fastigheter</span>-->
   </a>
 </div>
@@ -48,11 +58,6 @@
           href="#om-oss"
           class="block md:inline-block font-body hover:text-BokashiC-600 px-3 py-3 transition-colors duration-200"
           >Om Oss</a
-        >
-        <a
-          href="#galleri"
-          class="block md:inline-block font-body hover:text-BokashiC-600 px-3 py-3 transition-colors duration-200"
-          >Galleri</a
         >
         <a
           href="#kontakt"
@@ -90,7 +95,7 @@
     <div class="relative w-full h-[500px]" id="home">
       <div class="absolute inset-0 bg-black/60 z-10"></div>
       <img
-        src="/Image/IMG_Skogsvagen2.JPG"
+        src="Image/IMG_Skogsvagen2.JPG"
         alt="Modern apartment building"
         class="object-cover object-center w-full h-full"
       />
@@ -108,9 +113,9 @@
           Funderar du på att flytta hemifrån? hitta din lägenhet redan idag!
         </p>
         <a
-          href="#lagenheter"
+          href="ledigalagenheter.html"
           class="px-8 py-3 bg-BokashiC-600 text-KlipphallC-50 font-body font-semibold rounded-lg shadow-md hover:bg-BokashiC-700 transition-all duration-200 text-lg"
-        >
+>
           Se Lediga Lägenheter
         </a>
       </div>
@@ -124,13 +129,13 @@
         >
           Våra Fastigheter
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10">
           <a href="lagenheter_skogsvagen2.html">
             <div
               class="bg-KlipphallC-100 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
               <img
-                src="/image/IMG_Skogsvagen2.JPG"
+                src="Image/IMG_Skogsvagen2.JPG"
                 class="w-full h-72 object-cover"
               />
               <div class="p-8">
@@ -148,16 +153,16 @@
           
 
           <a href="lagenheter_bastuvägen1.html">
-            <div
+            <!--<div
               class="bg-KlipphallC-100 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
               <img
-                src="/image/IMG_Bastuvägen1.JPG"
+                src="Image/IMG_Skogsvagen2.JPG"
                 class="w-full h-72 object-cover"
               />
               <div class="p-8">
                 <h3 class="font-subheading text-PistageC-800 text-2xl mb-3">
-                  Bastuvägen 1
+                  Exempelvägen 1
                 </h3>
                 <p class="font-body text-PistageC-700 text-base leading-relaxed">
                   Perfekt för studenten eller pendlaren. Skogsvägen 2 är en gemytlig
@@ -167,42 +172,31 @@
               </div>
             </div>
           </a>
-         
+        -->
           
         </div>
       </div>
     </section>
 
-    <!-- OM OSS SECTION -->
-    <section class="bg-KlipphallC-100" id="om-oss">
-      <div class="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-          <div class="max-w-lg">
-            <h2
-              class="font-heading uppercase text-PistageC-800 text-4xl sm:text-5xl mb-6 "
-            >
-              Om DE fastigheter
-            </h2>
-            <p class="mt-4 font-body text-PistageC-700 text-lg leading-relaxed">
-              Vi som driver DE Fastigheter är två studenter med ett gemensamt engagemang för bostäder och människor. 
-              Vår vision är att erbjuda tryggt och trivsamt boende med hyresgästen i fokus.
-              Vi tror på personlig kontakt, omtanke och långsiktiga relationer med våra hyresgäster. 
-              Vårt mål är inte bara att hyra ut bostäder - utan att skapa hem där människor verkligen trivs.
-            </p>
-          </div>
-          <!--<div class="mt-12 md:mt-0">
-            <img
-              src="Image/IMG_5952.jpg"
-              alt="Couple happily in their new apartment"
-              class="object-cover rounded-xl shadow-xl"
-            />
-          </div> -->
+    <section class="bg-KlipphallC-100 py-20" id="om-oss">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="font-heading uppercase text-PistageC-800 text-4xl sm:text-5xl mb-6">
+            Om DE Fastigheter
+          </h2>
+          <p class="mt-3 text-lg text-PistageC-700 leading-relaxed">
+            Vi som driver DE Fastigheter är två studenter med ett gemensamt engagemang för bostäder och människor. 
+            Vår vision är att erbjuda tryggt och trivsamt boende med hyresgästen i fokus.
+            Vi tror på personlig kontakt, omtanke och långsiktiga relationer med våra hyresgäster. 
+            Vårt mål är inte bara att hyra ut bostäder – utan att skapa hem där människor verkligen trivs.
+          </p>
         </div>
       </div>
     </section>
+    
 
     <!-- KONTAKT SECTION -->
-<section class="py-20" id="kontakt">
+    <section class="py-20" id="kontakt">
   <div class="container mx-auto px-4">
     <div class="text-center">
       <h2 class="font-heading uppercase text-PistageC-800 text-4xl sm:text-5xl mb-6">
@@ -214,35 +208,36 @@
     </div>
 
     <!-- Flexlayout -->
-    <div class="mt-12 flex flex-col md:flex-row gap-8 md:items-start">
-      <!-- VÄNSTER: Kontaktkort -->
-      <div class="bg-KlipphallC-100 rounded-xl shadow-lg p-8 flex flex-col justify-between md:w-1/2">
+    <div class="mt-12 flex justify-center w-full">
+      <!-- KONTAKTKORT (centrerad och fullbredd på små skärmar, smalare på större) -->
+      <div class="bg-KlipphallC-100 rounded-xl shadow-lg p-8 flex flex-col justify-between w-full max-w-4xl">
         <div class="space-y-6">
           <div>
             <h3 class="text-lg font-subheading text-PistageC-800">Kontaktuppgifter</h3>
-
+    
             <p class="mt-2 font-body text-PistageC-700">
               <span class="font-semibold">Telefon:</span>
               <a href="tel:+46725756671" class="ml-2 hover:text-BokashiC-600 underline">072 575 66 71</a>
             </p>
-
+       
+    
             <p class="mt-2 font-body text-PistageC-700">
               <span class="font-semibold">E-post:</span>
               <a href="mailto:eliassundstrom@icloud.com" class="ml-2 hover:text-BokashiC-600 underline">eliassundstrom@icloud.com</a>
             </p>
-
+    
             <p class="mt-2 font-body text-PistageC-700">
               <span class="font-semibold">Adress:</span>
               <span class="ml-2">Rullstensgatan 180, 906 55 Umeå</span>
             </p>
           </div>
-
+    
           <div>
             <h3 class="text-lg font-subheading text-PistageC-800">Öppettider (Telefon)</h3>
             <p class="mt-1 font-body text-PistageC-700">Måndag – Fredag: 08:00 – 17:00</p>
           </div>
         </div>
-
+    
         <div class="pt-6">
           <a href="tel:+46725756671">
             <button
@@ -253,21 +248,10 @@
           </a>
         </div>
       </div>
-
-      <!-- HÖGER: Google Maps med MANUELL höjd -->
-      <div class="rounded-xl overflow-hidden shadow-lg md:w-1/2">
-        <iframe
-          title="Karta: Rullstensgatan 180, Umeå"
-          aria-label="Karta med adress Rullstensgatan 180, Umeå"
-          src="https://maps.google.com/maps?q=Rullstensgatan%20180%2C%20906%2055%20Ume%C3%A5&z=15&output=embed"
-          class="w-full h-[600px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
     </div>
+    
   </div>
-</section>
+    </section>
 
 
     <!-- FOOTER -->
