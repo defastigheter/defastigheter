@@ -63,7 +63,8 @@
 					Perfekt för studenten eller pendlaren. Skogsvägen 2 är en gemytlig
 					fastighet belägen i utkanten av Husum med närhet till både natur och
 					centrum. Här finns flera välplanerade lägenheter med ljusa ytor och
-					bekväm standard.
+					bekväm standard. Fastigheten består av två lägenheter, en på vardera våning med
+          gemensam tvättstuga och tillgång till uteplats med eldstad. 
 				  </p>
 				</div>
 			  </section>
@@ -78,14 +79,22 @@
         </h2>
 
         <div class="grid grid-cols-card gap-8">
-          <!-- Card 1 -->
+          <!-- LHG 1001 -->
           <div class="bg-KlipphallC-100 dark:bg-PistageC-700 rounded-xl shadow-lg overflow-hidden">
             <!-- Bild -->
             <img
               src="Image/underrenovering.png"
               alt="Tvårumslägenhet på entréplan, Skogsvägen 2"
-              class="w-full h-56 object-cover"
+              class="w-full h-96 object-cover"
             />
+
+            <!-- 🗺️ Länk till planlösning -->
+            <div class="text-LEFT mt-3">
+              <a href="Image/IMG_LGH_1001.JPG" target="_blank"
+                class="inline-block text-BokashiC-600 hover:text-BokashiC-700 font-body underline">
+                🗺️ Se planlösning
+              </a>
+            </div>
           
             <!-- Innehåll -->
             <div class="p-6 flex flex-col">
@@ -111,7 +120,7 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Våning:</span>
-                  <span>Våning 0</span>
+                  <span>0</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Storlek:</span>
@@ -123,11 +132,11 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Tillgänglig från:</span>
-                  <span>1 december 2025</span>
+                  <span>Obestämt</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Balkong / Uteplats:</span>
-                  <span>Nej</span>
+                  <span>Nej / Ja</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Parkering:</span>
@@ -159,7 +168,7 @@
                 <ul class="list-disc list-inside space-y-1">
                   <li>Renoverat kök (2025) med diskmaskin och induktionsspis</li>
                   <li>Tvättmaskin & torktumlare i gemensam tvättstuga</li>
-                  <li>Bredband ingår i hyran</li>
+                  <li>Bredband 100/100 Mbit/s ingår i hyran</li>
                   <li>Hushållsel upp till 200 kWh/mån ingår i hyran</li>
                 </ul>
               </div>
@@ -167,15 +176,54 @@
           </div>
         
           
+          <!--LHG 1101-->
+          <div class="bg-KlipphallC-100 dark:bg-PistageC-700 rounded-xl shadow-lg overflow-hidden">
 
-          <!-- Card 2 -->
-          <div class="bg-KlipphallC-100 dark:bg-PistageC-700 rounded-xl shadow-lg overflow-hidden ">
-            <!-- Bild -->
-            <img
-              src="Image/IMG_LGH_1101.JPG"
-              alt="Tvårumslägenhet på entréplan, Skogsvägen 2"
-              class="w-full h-56 object-cover"
-            />
+            <!-- Bildspel -->
+            <div class="relative w-full h-96 overflow-hidden group">
+              <div class="carousel-images relative w-full h-full">
+                <img src="Image/IMG_LGH_1101_1.JPG" alt="kök – Skogsvägen 2" class="w-full h-96 object-cover block">
+                <img src="Image/IMG_LGH_1101_2.JPG" alt="vardagsrum – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1101_3.JPG" alt="hall – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1101_4.JPG" alt="trapphus – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1101_5.JPG" alt="sovrum1 – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1101_6.JPG" alt="Sovrum2 – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1101_7.JPG" alt="toa1 – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+              </div>
+          
+              <!-- Navigationspilar -->
+              <button
+                class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 text-white rounded-full p-2 hover:bg-black/60 transition"
+                onclick="prevSlide(this)"
+                aria-label="Föregående bild">
+                &#10094;
+              </button>
+              <button
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 text-white rounded-full p-2 hover:bg-black/60 transition"
+                onclick="nextSlide(this)"
+                aria-label="Nästa bild">
+                &#10095;
+              </button>
+          
+              <!-- Indikatorer -->
+              <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                <span class="dot w-3 h-3 rounded-full bg-white/80"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+              </div>
+            </div>
+          
+            <!-- 🗺️ Länk till planlösning -->
+            <div class="text-LEFT mt-3">
+              <a href="Image/IMG_LGH_1101_Planlosning.png" target="_blank"
+                class="inline-block text-BokashiC-600 hover:text-BokashiC-700 font-body underline">
+                🗺️ Se planlösning
+              </a>
+            </div>
           
             <!-- Innehåll -->
             <div class="p-6 flex flex-col">
@@ -185,64 +233,25 @@
           
               <p class="font-body text-PistageC-700 dark:text-KlipphallC-200 text-base mb-4">
                 Denna ljusa och välplanerade tvåa på våning 1 erbjuder ett modernt boende med nyrenoverat kök,
-                rymligt vardagsrum kombinerat med kök och ett generöst sovrum. Lägenheten har ett trivsamt ljusinsläpp och ligger i
-                ett lugnt område med närhet till natur och service.
+                rymligt vardagsrum kombinerat med kök och ett generöst sovrum. Lägenheten har ett trivsamt ljusinsläpp
+                och ligger i ett lugnt område med närhet till natur och service.
               </p>
           
               <!-- Lägenhetsfakta -->
               <div class="bg-white/60 dark:bg-PistageC-600/40 rounded-lg p-4 mb-4 space-y-2 text-sm font-body text-PistageC-800 dark:text-KlipphallC-100">
-                <div class="flex justify-between">
-                  <span class="font-semibold">Adress:</span>
-                  <span>Skogsvägen 2</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Postnummer:</span>
-                  <span>896 31 Husum</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Våning:</span>
-                  <span>Våning 1</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Storlek:</span>
-                  <span>2 rok - 41 m²</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Hyra:</span>
-                  <span>- kr/mån</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Tillgänglig från:</span>
-                  <span>-</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Balkong / Uteplats:</span>
-                  <span>Ja</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="font-semibold">Parkering:</span>
-                  <span>Ingår</span>
-                </div>
+                <div class="flex justify-between"><span class="font-semibold">Adress:</span><span>Skogsvägen 2</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Postnummer:</span><span>896 31 Husum</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Våning:</span><span>1</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Storlek:</span><span>2 rok - 43 m²</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Hyra:</span><span>- kr/mån</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Tillgänglig från:</span><span>-</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Balkong / Uteplats:</span><span>Ja / Ja</span></div>
+                <div class="flex justify-between"><span class="font-semibold">Parkering:</span><span>Ingår</span></div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Status:</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 font-semibold">
-                  <span>Uthyrd <span class="mr-1">✖</span>
-
-                  <!--OM TILLGÄNGLIG-->
-                   <!--
-                  <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 font-semibold">
-                  <span>Tillgänglig <span class="mr-1">✔</span>
-                   -->
-
-                   <!--OM UTHYRD-->
-                   <!--
-                   <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 font-semibold">
-                  <span>Uthyrd <span class="mr-1">✖</span>
-                   -->
-
+                  <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 font-semibold">Uthyrd ✖</span>
                 </div>
               </div>
-            
           
               <!-- Utrustning -->
               <div class="text-sm font-body text-PistageC-700 dark:text-KlipphallC-200 mb-4">
@@ -250,7 +259,7 @@
                 <ul class="list-disc list-inside space-y-1">
                   <li>Renoverat kök (2025) med diskmaskin och induktionsspis</li>
                   <li>Tvättmaskin & torktumlare i gemensam tvättstuga</li>
-                  <li>Bredband ingår i hyran</li>
+                  <li>Bredband 100/100 Mbit/s ingår i hyran</li>
                   <li>Hushållsel upp till 200 kWh/mån ingår i hyran</li>
                 </ul>
               </div>
@@ -289,5 +298,39 @@
         <p>&copy; 2025 DE Fastigheter. All rights reserved.</p>
       </footer>
     </div>
+
+    <!-- 🧠 JavaScript för bildspelet -->
+    <script>
+  function nextSlide(button) {
+    const container = button.closest('.relative');
+    const images = container.querySelectorAll('.carousel-images img');
+    const dots = container.querySelectorAll('.dot');
+    let index = [...images].findIndex(img => !img.classList.contains('hidden'));
+    images[index].classList.add('hidden');
+    dots[index].classList.remove('bg-white/80');
+    dots[index].classList.add('bg-white/40');
+    index = (index + 1) % images.length;
+    images[index].classList.remove('hidden');
+    dots[index].classList.add('bg-white/80');
+    dots[index].classList.remove('bg-white/40');
+  }
+
+  function prevSlide(button) {
+    const container = button.closest('.relative');
+    const images = container.querySelectorAll('.carousel-images img');
+    const dots = container.querySelectorAll('.dot');
+    let index = [...images].findIndex(img => !img.classList.contains('hidden'));
+    images[index].classList.add('hidden');
+    dots[index].classList.remove('bg-white/80');
+    dots[index].classList.add('bg-white/40');
+    index = (index - 1 + images.length) % images.length;
+    images[index].classList.remove('hidden');
+    dots[index].classList.add('bg-white/80');
+    dots[index].classList.remove('bg-white/40');
+  }
+    </script>
+    </body>
+    </html>
+
   </body>
 </html>
