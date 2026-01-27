@@ -66,6 +66,8 @@
     --color-KlipphallC-100: #efebe6;
     --color-KlipphallC-200: #dfd8ce;
     --color-KlipphallC-300: #cfc4b5;
+    --color-KlipphallC-400: #b9a993;
+    --color-KlipphallC-600: #857156;
     --color-BokashiC-50: #f7f6ee;
     --color-BokashiC-400: #b8b570;
     --color-BokashiC-500: #a4a051;
@@ -237,6 +239,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -245,6 +250,9 @@
   }
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -363,6 +371,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -432,11 +443,25 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
+  .max-w-full {
+    max-width: 100%;
+  }
   .flex-grow {
     flex-grow: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -445,6 +470,9 @@
   }
   .cursor-not-allowed {
     cursor: not-allowed;
+  }
+  .resize {
+    resize: both;
   }
   .list-inside {
     list-style-position: inside;
@@ -607,6 +635,9 @@
   .bg-PistageC-800 {
     background-color: var(--color-PistageC-800);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/40 {
     background-color: color-mix(in srgb, #000 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -630,6 +661,9 @@
   }
   .bg-transparent {
     background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-white\/40 {
     background-color: color-mix(in srgb, #fff 40%, transparent);
@@ -768,6 +802,9 @@
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }
+  .break-words {
+    overflow-wrap: break-word;
+  }
   .text-BokashiC-400 {
     color: var(--color-BokashiC-400);
   }
@@ -837,6 +874,10 @@
   .ring {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -1173,6 +1214,36 @@
       border-color: var(--color-PistageC-700);
     }
   }
+  .dark\:bg-KlipphallC-200 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-KlipphallC-200);
+    }
+  }
+  .dark\:bg-KlipphallC-300 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-KlipphallC-300);
+    }
+  }
+  .dark\:bg-KlipphallC-400 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-KlipphallC-400);
+    }
+  }
+  .dark\:bg-KlipphallC-600 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-KlipphallC-600);
+    }
+  }
+  .dark\:bg-PistageC-400 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-PistageC-400);
+    }
+  }
+  .dark\:bg-PistageC-500 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-PistageC-500);
+    }
+  }
   .dark\:bg-PistageC-600\/40 {
     @media (prefers-color-scheme: dark) {
       background-color: color-mix(in srgb, #707c65 40%, transparent);
@@ -1400,6 +1471,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1445,6 +1521,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;

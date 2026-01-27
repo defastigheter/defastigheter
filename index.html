@@ -16,11 +16,20 @@ git push -f origin main
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DE fastigheter - Hitta ditt nya hem</title>
-
-    <title>DE fastigheter</title>
-    <link href="src/output.css" rel="stylesheet" />
-
+    <meta
+      name = "description"
+      content = "DE Fastigheter erbjuder uthyrning av lägenheter i Husum"
+    />
+    <!-- PNG-favicon (för Google Search, Android, moderna webbläsare) -->
+   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="DE Fastigheter" />
+  <link rel="manifest" href="/site.webmanifest" />
     
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDLQG08W2E"></script>
 <script>
@@ -33,10 +42,10 @@ git push -f origin main
 
   </head>
 
-  <body class="bg-KlipphallC-50 text-PistageC-800 font-body">
+  <body class="bg-KlipphallC-50 dark:bg-KlipphallC-300 text-PistageC-800 font-body">
     <!-- NAV BAR SECTION -->
     <nav
-      class="flex flex-wrap items-center justify-between p-4 bg-KlipphallC-100 shadow-md sticky top-0 z-50"
+      class="flex flex-wrap items-center justify-between p-4 bg-KlipphallC-100 dark:bg-KlipphallC-300 shadow-md sticky top-0 z-50"
     >
       <div class="text-2xl font-subheading tracking-wide">
   <a href="#home" class="flex items-center space-x-2">
@@ -139,24 +148,24 @@ git push -f origin main
     <section class="py-20" id="lagenheter">
       <div class="container mx-auto px-4">
         <h2
-          class="font-heading uppercase text-PistageC-800 text-4xl sm:text-5xl mb-12 text-center"
+          class="font-heading uppercase text-PistageC-800 dark:text-KlipphallC-50 text-4xl sm:text-5xl mb-12 text-center"
         >
           Vår Fastighet
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10">
           <a href="lagenheter_skogsvagen2.html">
             <div
-              class="bg-KlipphallC-100 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+              class="bg-KlipphallC-100 dark:bg-PistageC-700 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
               <img
                 src="Image/IMG_Skogsvagen2.JPG"
                 class="w-full h-72 object-cover"
               />
               <div class="p-8">
-                <h3 class="font-subheading text-PistageC-800 text-2xl mb-3">
+                <h3 class="font-subheading text-PistageC-800 dark:text-KlipphallC-50 text-2xl mb-3">
                   Skogsvägen 2
                 </h3>
-                <p class="font-body text-PistageC-700 text-base leading-relaxed">
+                <p class="font-body text-PistageC-700 dark:text-KlipphallC-50 text-base leading-relaxed">
                   Perfekt för studenten eller pendlaren. Skogsvägen 2 är en gemytlig
                   fastighet belägen i utkanten av Husum med närhet till både naturen
                   och centrum.
@@ -169,13 +178,13 @@ git push -f origin main
     </section>
 
     <!-- OM OSS SECTION -->
-    <section class="bg-KlipphallC-100 py-20" id="om-oss">
+    <section class="bg-KlipphallC-100 dark:bg-PistageC-700 py-20" id="om-oss">
       <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto">
-          <h2 class="font-heading uppercase text-PistageC-800 text-4xl sm:text-5xl mb-6">
+          <h2 class="font-heading uppercase text-PistageC-800 dark:text-KlipphallC-50 text-4xl sm:text-5xl mb-6">
             Om DE Fastigheter
           </h2>
-          <p class="mt-3 text-lg text-PistageC-700 leading-relaxed">
+          <p class="mt-3 text-lg text-PistageC-700 dark:text-KlipphallC-50 leading-relaxed">
             Vi är två studenter med ett gemensamt engagemang för bostäder och människor. 
             Vår vision är att erbjuda tryggt och trivsamt boende med hyresgästen i fokus.
             Vi tror på personlig kontakt, omtanke och långsiktiga relationer med våra hyresgäster. 
@@ -193,10 +202,10 @@ git push -f origin main
           <h2 class="font-heading uppercase text-PistageC-800 dark:text-KlipphallC-50 text-4xl sm:text-5xl mb-6">
             Kontakta Oss
           </h2>
-          <p class="mt-3 text-lg text-PistageC-700 dark:text-KlipphallC-200 max-w-2xl mx-auto">
+          <p class="mt-3 text-lg text-PistageC-700  max-w-2xl mx-auto">
             Vi ser fram emot att höra från dig. Skicka gärna ett mail eller ring oss så återkopplar vi så snart vi kan.
           </p>
-          <p class="mt-2 text-PistageC-700 dark:text-KlipphallC-300 font-body">
+          <p class="mt-2 text-PistageC-700  font-body">
             <span class="font-semibold">Ägare:</span> Elias Sundström & Daga Kjellsson
           </p>
         </div>
@@ -217,7 +226,7 @@ git push -f origin main
                 </span>
                 <span class="block ml-0">
                   Daga Kjellsson 
-                  <a href="tel:+46700000000" class="ml-1 hover:text-BokashiC-600 underline">070 390 91 02</a>
+                  <a href="tel:+46703909102" class="ml-1 hover:text-BokashiC-600 underline">070 390 91 02</a>
                 </span>
               </p>
               
