@@ -64,11 +64,41 @@
           <!-- LHG 1001 -->
           <div class="bg-KlipphallC-100 dark:bg-PistageC-700 rounded-xl shadow-lg overflow-hidden">
             <!-- Bild -->
-            <img
-              src="Image/underrenovering.png"
-              alt="Tvårumslägenhet på entréplan, Skogsvägen 2"
-              class="w-full h-96 object-cover"
-            />
+            <div class="relative w-full h-96 overflow-hidden group">
+              <div class="carousel-images relative w-full h-full">
+                <img src="Image/IMG_LGH_1001_1.JPG" alt="kök – Skogsvägen 2" class="w-full h-96 object-cover block">
+                <img src="Image/IMG_LGH_1001_2.JPG" alt="vardagsrum – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1001_3.JPG" alt="hall – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1001_4.JPG" alt="trapphus – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1001_5.JPG" alt="sovrum1 – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+                <img src="Image/IMG_LGH_1001_6.JPG" alt="Sovrum2 – Skogsvägen 2" class="w-full h-96 object-cover hidden">
+              </div>
+          
+              <!-- Navigationspilar -->
+              <button
+                class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 text-white rounded-full p-2 hover:bg-black/60 transition"
+                onclick="prevSlide(this)"
+                aria-label="Föregående bild">
+                &#10094;
+              </button>
+              <button
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 text-white rounded-full p-2 hover:bg-black/60 transition"
+                onclick="nextSlide(this)"
+                aria-label="Nästa bild">
+                &#10095;
+              </button>
+          
+              <!-- Indikatorer -->
+              <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                <span class="dot w-3 h-3 rounded-full bg-white/80"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+                <span class="dot w-3 h-3 rounded-full bg-white/40"></span>
+              </div>
+            </div>
 
             <!-- 🗺️ Länk till planlösning -->
             <div class="text-LEFT mt-3">
@@ -126,8 +156,8 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="font-semibold">Status:</span>
-                  <span class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-orange-800 font-semibold">
-                    <span>Renoveras <span class="mr-1">⚠️</span>
+                  <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 font-semibold">
+                  <span>Tillgänglig <span class="mr-1">✔</span>
                   
                   <!--OM TILLGÄNGLIG-->
                   <!--
@@ -141,7 +171,7 @@
                     <span>Uthyrd <span class="mr-1">✖</span>
                    -->
 
-                  <!--OM UTHYRD-->
+                  <!--OM RENOVERAS-->
                   <!--
                   <span class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-orange-800 font-semibold">
                     <span>Renoveras <span class="mr-1">⚠️</span>
@@ -156,8 +186,8 @@
                 <ul class="list-disc list-inside space-y-1">
                   <li>Renoverat kök (2025) med diskmaskin och induktionsspis</li>
                   <li>Tvättmaskin & torktumlare i gemensam tvättstuga</li>
-                  <li>Bredband 100/100 Mbit/s ingår i hyran</li>
-                  <li>Hushållsel ingår ej i hyran</li>
+                  <li>Bredband 250/250 Mbit/s ingår i hyran</li>
+                  <li>Hushållsel upp till 200 kWh/mån ingår i hyran</li>
                   <li>Tillgång till gemensam uteplats med eldstad</li>
                   <li>Motorvärmaruttag debiteras separat</li>
                 </ul>
